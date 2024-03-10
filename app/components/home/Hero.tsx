@@ -43,12 +43,12 @@ const HeroText: React.FC = () => {
 
   return (
     <div className="lg:absolute left-[5%] top-2/4 p-4 w-full md:w-1/3 flex flex-col gap-2  text-white">
-      <p className="text-white text-xl md:text-4xl lg:text-8xl font-bold hero-title font-seasons">
+      <p className="text-white text-xl md:text-2xl lg:text-5xl font-bold hero-title font-seasons">
         COMFORT MEETS BEAUTY
       </p>
 
       <p
-        className={`text-white text-lg md:text-xl lg:text-4xl hero-message font-dm-sans`}
+        className={`text-white text-lg md:text-xl lg:text-2xl hero-message font-dm-sans`}
       >
         Elevate the aesthetics of your home with our designer premium foam
         anti-fatigue standing mats.
