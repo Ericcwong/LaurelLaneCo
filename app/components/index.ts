@@ -1,0 +1,7 @@
+export {Navbar} from './navigation/NavBar'
+export {Hero} from './home/Hero'
+export {OurCollection } from './home/OurCollection'
+export {ImageCollage} from './home/ImageCollage'
+export {SupportiveComfort} from './home/SupportiveComfort'
+export {Footer} from './navigation/Footer'
+export {SocialIcons} from './SocialIcons'

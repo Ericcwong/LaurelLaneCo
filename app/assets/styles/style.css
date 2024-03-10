@@ -1,0 +1,116 @@
+/* Navigation hover underline animation */
+.link-underline {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .link-underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the thickness of the underline */
+    bottom: 0;
+    right: 0%; /* Start from the right side */
+    background-color: #948e84; /* Adjust the underline color */
+    transform: scaleX(0); /* Initially, set the width to 0 */
+    transform-origin: left; /* Set the transform origin to the right */
+    transition: transform 0.3s ease; /* Add a smooth animation */
+  }
+  
+  .link-underline:hover::before {
+    right: 100; /* Move to the left edge */
+    transform: scaleX(1); /* Expand the underline on hover */
+  }
+.masonry-grid {
+  column-count: 4; /* Adjust the number of columns based on your design */
+  column-gap: 16px; /* Adjust the gap between columns */
+  width: 100%;
+  grid-template-rows: auto;
+}
+.ml16 {
+  color: #402d2d;
+  padding: 40px 0;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.letter {
+  display: inline-block;
+  line-height: initial;
+}
+.image-collage {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 7vw);
+  grid-gap: 15px;
+}
+.image-collage > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 5px;
+  
+}
+.image-collage > p {
+  grid-column: 1 / 3; /* Make paragraph span across all columns */
+  grid-row: 1 / 2; /* Positioned in the first row */
+}
+
+.image-collage > img:nth-child(2) {
+  grid-column: 1 / 3; /* Span first four columns */
+  grid-row: 2 / 9; /* Position image right below the paragraph */
+}
+
+.image-collage > img:nth-child(3) {
+  grid-column: 3 / 5; /* Span next four columns */
+  grid-row: 1 / 5; /* Same row span as the first image, but on the right side */
+}
+
+.image-collage > img:nth-child(4) {
+  grid-column: 3 / 5; /* Back to first four columns */
+  grid-row: 5 / 9; /* Positioned below the first image */
+
+}
+.image-collage > img:nth-child(5) {
+  grid-column: 5 / 7; /* Back to first four columns */
+  grid-row: 1 / 7; /* Positioned below the first image */
+}
+.image-collage > img:nth-child(6) {
+  grid-column: 5 / 7; /* Back to first four columns */
+  grid-row: 7 / 9; /* Positioned below the first image */
+}
+.image-collage > img:nth-child(7) {
+  grid-column: 7 / 9; /* Back to first four columns */
+  grid-row: 1 / 5; /* Positioned below the first image */
+}
+.image-collage > img:nth-child(8) {
+  grid-column: 7 / 9; /* Back to first four columns */
+  grid-row: 5 / 9; /* Positioned below the first image */
+}
+
+/* Responsive adjustment for mobile devices */
+@media (max-width: 768px) {
+  .image-collage {
+    grid-template-columns: 1fr; /* All items in a single column */
+  }
+
+  .image-collage > img, .image-collage > p {
+    grid-column: 1 / -1; /* Ensure all elements span the full width of the single column */
+  }
+}
+
+.bathmat {
+  grid-column: 5 / 7; /* Back to first four columns */
+  grid-row: 1 / 7; /* Positioned below the first image */
+}
+.topdown {
+  grid-column: 5 / 7; /* Back to first four columns */
+  grid-row: 7 / 9; /* Positioned below the first image */
+}
