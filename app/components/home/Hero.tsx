@@ -10,7 +10,7 @@ export const Hero = () => {
       <img
         src={HomeImage}
         alt=""
-        className="w-full h-[80vh] lg:h-[100vh] object-cover absolute top-0"
+        className="w-full h-[100vh] object-cover absolute top-0"
         style={{ objectPosition: "center bottom" }}
       />
       <HeroText />

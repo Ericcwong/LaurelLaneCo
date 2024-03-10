@@ -15,9 +15,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="grid gap-8 bg-light-beige">
+    <div className="grid gap-4 bg-light-beige">
       <Hero />
-      <div className="grid gap-8 xl:container xl:mx-auto ">
+      <div className="grid gap-4 lg:gap-8 xl:container xl:mx-auto ">
         <OurCollection />
         <ImageCollage />
         <SupportiveComfort />

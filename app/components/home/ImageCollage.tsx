@@ -1,40 +1,27 @@
-import ovenMat from "../../assets/images/collage-1.jpg";
-import topDownCheckerPattern from "../../assets/images/collage-2.jpg";
-import bathroomMat from "../../assets/images/collage-3.jpg";
-import blueDress from "../../assets/images/collage-4.jpg";
-import laundryRoomMat from "../../assets/images/collage-5.jpg";
-import pinkDress from "../../assets/images/collage-6.jpg";
-import topDownLeafPattern from "../../assets/images/collage-7.jpg";
+import ovenMat from "../../assets/images/collage-1.webp";
+import topDownCheckerPattern from "../../assets/images/collage-2.webp";
+import bathroomMat from "../../assets/images/collage-3.webp";
+import blueDress from "../../assets/images/collage-4.webp";
+import laundryRoomMat from "../../assets/images/collage-5.webp";
+import pinkDress from "../../assets/images/collage-6.webp";
+import topDownLeafPattern from "../../assets/images/collage-7.webp";
 
 export const ImageCollage = () => {
-  const images = [
-    { src: ovenMat },
-    { src: topDownCheckerPattern },
-    { src: bathroomMat },
-    { src: blueDress },
-    { src: laundryRoomMat },
-    { src: pinkDress },
-    { src: topDownLeafPattern },
-  ];
-  const getItemClassName = (index: number) => {
-    return index % 2 === 0 ? " object-cover" : "object-cover";
-  };
-
   return (
     <div className="image-collage">
       {/* Left side */}
-      <p className="font-cmu-serif uppercase text-2xl font-light flex items-center">
+      <p className="font-cmu-serif uppercase text-xl font-light flex items-center ">
         The upgrade every home deserves
       </p>
+      {/* Fade in animation*/}
       <img src={topDownLeafPattern} alt="" className="" />
-      <img src={laundryRoomMat} alt="" />
-      <img src={pinkDress} alt="" />
-      {/* Right side */}
-
-      <img src={bathroomMat} alt="" />
-      <img src={topDownCheckerPattern} alt="" />
-      <img src={ovenMat} alt="" />
+      <img src={laundryRoomMat} alt="" /> {/* Fade in animation*/}
+      <img src={pinkDress} alt="" /> {/* Left to right animation*/}
+      <img src={bathroomMat} alt="" /> {/* Grow in animation*/}
+      <img src={topDownCheckerPattern} alt="" /> {/* Bottom up animation*/}
+      <img src={ovenMat} alt="" /> {/* Fade in animation*/}
       <img src={blueDress} alt="" />
+      {/* Bottom up animation*/}
     </div>
   );
 };

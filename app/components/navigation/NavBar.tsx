@@ -15,7 +15,7 @@ export const Navbar = () => {
     <div className="font-seasons">
       <nav className="fixed  left-1/2 -translate-x-1/2 w-full text-center shadow-xl  text-black  bg-white p-4 z-40 grid grid-cols-4 justify-between items-center px-12">
         {/* Hamburger Icon */}
-        <div className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <div className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <svg
             className="w-6 h-6"
             fill="none"
