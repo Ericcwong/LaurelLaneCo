@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MobileDrawer } from "./MobileDrawer";
-
+import LogoSVG from "~/assets/svg/logo.svg";
 export const Navbar = () => {
   const [email, setEmail] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,8 +43,8 @@ export const Navbar = () => {
           </a>
         </div>
         {/* Company Name - Always visible */}
-        <div className="text-center text-2xl md:text-4xl font-bold col-span-2">
-          Laurel Lane Co
+        <div className="text-center flex items-center justify-center w-full font-bold col-span-2">
+          <img src={LogoSVG} alt="" width={90} height={90} />
         </div>
 
         {/* Placeholder for layout consistency */}
