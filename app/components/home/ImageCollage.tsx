@@ -14,13 +14,46 @@ export const ImageCollage = () => {
         The upgrade every home deserves
       </p>
       {/* Fade in animation*/}
-      <img src={topDownLeafPattern} alt="" className="" />
-      <img src={laundryRoomMat} alt="" /> {/* Fade in animation*/}
-      <img src={pinkDress} alt="" /> {/* Left to right animation*/}
-      <img src={bathroomMat} alt="" /> {/* Grow in animation*/}
-      <img src={topDownCheckerPattern} alt="" /> {/* Bottom up animation*/}
-      <img src={ovenMat} alt="" /> {/* Fade in animation*/}
-      <img src={blueDress} alt="" />
+      <img
+        src={topDownLeafPattern}
+        alt=""
+        className="max-w-[400px]  lg:max-h-max object-cover"
+      />
+      <img
+        src={laundryRoomMat}
+        alt=""
+        className="max-w-[400px]  lg:max-h-max object-cover"
+      />{" "}
+      {/* Fade in animation*/}
+      <img
+        src={pinkDress}
+        alt=""
+        className="max-w-[400px]  lg:max-h-max object-cover"
+      />{" "}
+      {/* Left to right animation*/}
+      <img
+        src={bathroomMat}
+        alt=""
+        className="max-w-[400px]  lg:max-h-max object-cover"
+      />{" "}
+      {/* Grow in animation*/}
+      <img
+        src={topDownCheckerPattern}
+        alt=""
+        className="max-w-[400px]  lg:max-h-max object-cover"
+      />{" "}
+      {/* Bottom up animation*/}
+      <img
+        src={ovenMat}
+        alt=""
+        className="max-w-[400px]  lg:max-h-max object-cover"
+      />{" "}
+      {/* Fade in animation*/}
+      <img
+        src={blueDress}
+        alt=""
+        className="max-w-[400px]  lg:max-h-max object-cover"
+      />
       {/* Bottom up animation*/}
     </div>
   );

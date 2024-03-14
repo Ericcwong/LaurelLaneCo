@@ -7,7 +7,7 @@ export default {
       'seasons': ["the-seasons", "sans-serif"],
       'dm-sans': ["DM Sans", "sans-serif"],
       "cormorant-garamond": ["Cormorant Garamond", "serif"],
-      "cmu-serif": ["CMU Serif", "serif"],
+      'cmu-serif': ['"cmu-serif"', 'serif'],
       
     },
     extend: {

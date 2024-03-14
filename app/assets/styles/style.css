@@ -147,6 +147,8 @@
   .image-collage {
     display: flex; /* Use flexbox layout */
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: nowrap; /* Prevent items from wrapping */
     overflow-x: auto; /* Enable horizontal scrolling */
     width: 100%; /* Ensure the container spans the full width */

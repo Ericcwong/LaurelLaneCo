@@ -1,10 +1,12 @@
 import { SocialIcons } from "..";
 import footerImage from "~/assets/images/footer.webp";
+import pkg from "react-lazy-load-image-component";
 export const Footer = () => {
+  const { LazyLoadImage } = pkg;
   return (
     <footer className="p-8">
       <div className="grid grid-cols-4 gap-4">
-        <section className="flex flex-col justify-center items-center text-left col-span-1">
+        <section className="flex flex-col justify-center items-center container mx-auto lg:text-left col-span-4 lg:col-span-1">
           <h2 className="text-4xl font-cmu-serif w-full uppercase font-light">
             Stay in the Know
           </h2>
@@ -15,8 +17,16 @@ export const Footer = () => {
           </p>
           <SocialIcons />
         </section>
-        <div className="col-span-3">
-          <img src={footerImage} alt="Mat in the bathroom" />
+        <div className="col-span-4 lg:col-span-3">
+          <LazyLoadImage
+            src={footerImage}
+            effect="opacity"
+            alt="Mat in the bathroom"
+            wrapperProps={{
+              // If you need to, you can tweak the effect transition using the wrapper style.
+              style: { transitionDelay: "1s" },
+            }}
+          />
         </div>
       </div>
     </footer>

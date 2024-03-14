@@ -11,15 +11,12 @@ import {
 import tailwind from "./tailwind.css";
 import styles from "./assets/styles/style.css";
 import { Footer, Navbar } from "~/components";
+import { SpeedInsights } from "@vercel/speed-insights/remix";
+
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
   { rel: "stylesheet", href: tailwind },
   { rel: "stylesheet", href: styles },
-  {
-    rel: "stylesheet",
-    href: "https://fontlibrary.org//face/cmu-serif",
-    type: "text/css",
-  },
   {
     rel: "stylesheet",
     href: "https://fonts.googleapis.com",
@@ -54,6 +51,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <SpeedInsights />
       </body>
     </html>
   );
